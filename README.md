@@ -10,7 +10,7 @@
 #修改代码里面的userids为你的
 ```
 toWechat.py  第8行
-userIds='orPQ800sg4nMZkuMKxH01LiFpNxsyvWM148v64'
+userIds='orPQ800sg4nMZkuMKxH01LiFpNxsyvWM149999'
 ```
 
 #安装beautifulsoup
