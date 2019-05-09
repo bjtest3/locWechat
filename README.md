@@ -1,4 +1,8 @@
 # locWechat
+#关注微信公共账号 wxpusher
+左下角获取你的userids
+
+
 #安装beautifulsoup
 ```
 wget https://www.crummy.com/software/BeautifulSoup/bs4/download/4.5/beautifulsoup4-4.5.1.tar.gz
