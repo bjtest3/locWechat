@@ -25,7 +25,9 @@ python setup.py install
 pip install request
 ```
 
-#下载脚本
+#下载脚本执行
 ```
+wget https://raw.githubusercontent.com/bjtest3/locWechat/master/toWechat.py
 
+python toWechat.py
 ```
