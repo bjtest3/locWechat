@@ -1,7 +1,14 @@
 # locWechat
 #关注微信公共账号 wxpusher
+```
 左下角获取你的userids
 
+```
+#修改代码里面的userids为你的
+```
+toWechat.py  第8行
+userIds='orPQ800sg4nMZkuMKxH01LiFpNxsyvWM148v64'
+```
 
 #安装beautifulsoup
 ```
