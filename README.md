@@ -7,9 +7,9 @@
 左下角获取你的userids
 
 ```
-#修改代码里面的userids为你的
+#记得修改userids为你的
 ```
-toWechat.py  第8行
+脚本toWechat.py  第8行
 userIds='orPQ800sg4nMZkuMKxH01LiFpNxsyvWM149999'
 ```
 
@@ -28,7 +28,7 @@ python setup.py install
 pip install request
 ```
 
-#下载脚本执行
+#下载脚本执行，执行前记得修改userids
 ```
 wget https://raw.githubusercontent.com/bjtest3/locWechat/master/toWechat.py
 
