@@ -32,7 +32,7 @@ pip install beautifulsoup4
 pip install request
 ```
 
-#下载脚本执行，执行前记得修改userids
+#下载脚本执行，执行前记得修改userids<br>
 #hostloc.com
 ```
 wget https://raw.githubusercontent.com/bjtest3/locWechat/master/toWechat.py
