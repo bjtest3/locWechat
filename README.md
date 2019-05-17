@@ -33,13 +33,13 @@ pip install request
 ```
 
 #下载脚本执行，执行前记得修改userids
-hostloc.com
+#hostloc.com
 ```
 wget https://raw.githubusercontent.com/bjtest3/locWechat/master/toWechat.py
 
 python toWechat.py
 ```
-zuanke8.com
+#zuanke8.com
 ```
 wget https://raw.githubusercontent.com/bjtest3/locWechat/master/zkbWechat.py
 
