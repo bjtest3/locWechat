@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import time
 
 
-userIds='orPQ800sg4nMZkuMKxH01LiFpNxsyvWM148v64'
+userIds='orPQ800sg4nMZkuMKxH01LiFpNxsyvWM148888'
 
 def getnewesttitle():
     url = 'http://www.zuanke8.com/forum.php?mod=forumdisplay&fid=15&filter=author&orderby=dateline'
