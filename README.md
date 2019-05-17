@@ -45,7 +45,7 @@ wget https://raw.githubusercontent.com/bjtest3/locWechat/master/zkbWechat.py
 
 python zkbWechat.py
 ```
-**脚本跑十几小时就会挂，用这个脚本守护一下**
+***脚本跑十几小时就会挂，用这个脚本守护一下***
 ```
 vi listen.sh
 chmod +x listen.sh
