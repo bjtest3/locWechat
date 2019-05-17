@@ -33,15 +33,46 @@ pip install request
 ```
 
 #下载脚本执行，执行前记得修改userids<br>
-#hostloc.com
+**hostloc.com**
 ```
 wget https://raw.githubusercontent.com/bjtest3/locWechat/master/toWechat.py
 
 python toWechat.py
 ```
-#zuanke8.com
+**zuanke8.com**
 ```
 wget https://raw.githubusercontent.com/bjtest3/locWechat/master/zkbWechat.py
 
 python zkbWechat.py
+```
+**脚本跑十几小时就会挂，用这个脚本守护一下**
+```
+vi listen.sh
+chmod +x listen.sh
+```
+<br>
+```
+#!/bin/sh
+# 默认shell执行需要的内容
+
+# 环境变量重新生效
+source /etc/profile
+
+# 判断进程是否存在，记得使用grep -v 排除gerp进程
+retDesc=`ps -ef | grep "toWechat" | grep -v grep`
+retCode=$?
+# 判断是否不为0，不为0就重新启动服务器，为0就说明服务器存在
+if [ ${retCode} -ne 0 ]; 
+    then
+    echo "`date` restart" >> /root/wechatlisten.log 
+    nohup python /root/toWechat.py & 
+else
+    echo "server on"
+fi
+```
+
+**加入到定时任务**
+```
+crontab -e
+*/1 * * * * /root/listen.sh
 ```
