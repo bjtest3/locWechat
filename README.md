@@ -22,6 +22,10 @@ cd beautifulsoup4-4.5.1
 
 python setup.py install
 ```
+or use this way
+```
+pip install beautifulsoup4
+```
 
 #安装request
 ```
@@ -29,8 +33,15 @@ pip install request
 ```
 
 #下载脚本执行，执行前记得修改userids
+hostloc.com
 ```
 wget https://raw.githubusercontent.com/bjtest3/locWechat/master/toWechat.py
 
 python toWechat.py
+```
+zuanke8.com
+```
+wget https://raw.githubusercontent.com/bjtest3/locWechat/master/zkbWechat.py
+
+python zkbWechat.py
 ```
