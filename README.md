@@ -53,15 +53,15 @@ chmod +x listen.sh
 <br>
 ```
 #!/bin/sh
-# 默认shell执行需要的内容
+# `默认shell执行需要的内容`
 
-# 环境变量重新生效
+# `环境变量重新生效`
 source /etc/profile
 
-# 判断进程是否存在，记得使用grep -v 排除gerp进程
+# `判断进程是否存在，记得使用grep -v 排除gerp进程`
 retDesc=`ps -ef | grep "toWechat" | grep -v grep`
 retCode=$?
-# 判断是否不为0，不为0就重新启动服务器，为0就说明服务器存在
+# `判断是否不为0，不为0就重新启动服务器，为0就说明服务器存在`
 if [ ${retCode} -ne 0 ]; 
     then
     echo "`date` restart" >> /root/wechatlisten.log 
