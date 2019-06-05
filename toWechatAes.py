@@ -44,15 +44,16 @@ def getnewesttitle():
     requests.adapters.DEFAULT_RETRIES = 5
     s = requests.session() 
     s.keep_alive = False
-    r = s.get(url, headers=headers)
     
-    result = 'Please turn JavaScript on and reload the page' in r.text
+    
+    result = 'L7FW' in cookiestr
     print result
     if (result):
         print 'hostloc start AES Decrypt ... '
         headers = {'Cookie': cookiestr,'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36'}
         r = s.get(url, headers=headers)
-        
+    else:
+        r = s.get(url, headers=headers)    
 
     soup = BeautifulSoup(r.text,'html.parser')
     newest = soup.find('span',class_='by')
